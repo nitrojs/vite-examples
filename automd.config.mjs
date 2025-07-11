@@ -11,7 +11,7 @@ export default {
 
           const stackblitz = `https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/${name}?startScript=dev&file=vite.config.mjs,server.ts`;
 
-          const cloneCommand = `npx giget gh:nitrojs/vite-examples/examples/${name}`;
+          const cloneCommand = `npx giget gh:nitrojs/vite-examples/examples/${name} ${name}-app`;
 
           examples.push([
             `\`${name}\``,

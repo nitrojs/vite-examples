@@ -41,7 +41,7 @@ function resolveEntry(entry: string): string {
       throw new Error(
         manifest
           ? `Entry "${entry}" not found in Vite manifest.`
-          : "Vite manifest is not available."
+          : "Vite manifest is not available.",
       );
     }
     return `/${file}`;
