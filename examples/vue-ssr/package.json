@@ -1,0 +1,14 @@
+{
+  "name": "nitro-vite-vue-ssr",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "nitro": "npm:nitro-nightly",
+    "vite": "^7",
+    "vue": "^3.5.17"
+  }
+}

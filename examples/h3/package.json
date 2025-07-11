@@ -1,0 +1,13 @@
+{
+  "name": "nitro-vite-h3",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev"
+  },
+  "devDependencies": {
+    "nitro": "npm:nitro-nightly",
+    "vite": "^7",
+    "h3": "npm:h3-nightly@beta"
+  }
+}

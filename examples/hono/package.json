@@ -1,0 +1,13 @@
+{
+  "name": "nitro-vite-hono",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev"
+  },
+  "devDependencies": {
+    "hono": "^4.8.4",
+    "nitro": "npm:nitro-nightly",
+    "vite": "^7"
+  }
+}

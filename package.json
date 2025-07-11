@@ -1,0 +1,10 @@
+{
+  "name": "nitro-vite-examples-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.13.1",
+  "resolutions": {
+    "nitro": "npm:nitro-nightly@3.0.0-20250711-090755.54759a69",
+    "vite": "^7.0.4"
+  }
+}
