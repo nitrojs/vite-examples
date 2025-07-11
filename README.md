@@ -7,16 +7,20 @@
 
 ## Examples
 
+https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/h3?startScript=dev&file=vite.config.mjs,server.ts
+
+<!-- Use `pnpm automd` to update section below -->
+
 <!-- automd:examples -->
 
-| Example | Source |
-| --- | --- |
-| `basic-service` | [examples/basic-service](./examples/examples/basic-service/) |
-| `h3` | [examples/h3](./examples/examples/h3/) |
-| `hono` | [examples/hono](./examples/examples/hono/) |
-| `node-compat` | [examples/node-compat](./examples/examples/node-compat/) |
-| `react-ssr` | [examples/react-ssr](./examples/examples/react-ssr/) |
-| `vue-ssr` | [examples/vue-ssr](./examples/examples/vue-ssr/) |
+| Example | Source | Playground | Clone |
+| --- | --- | --- | --- |
+| `basic-service` | [examples/basic-service](./examples/basic-service/) | [stackblitz](https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/basic-service?startScript=dev&file=vite.config.mjs,server.ts) | `npx giget gh:nitrojs/vite-examples/examples/basic-service` |
+| `h3` | [examples/h3](./examples/h3/) | [stackblitz](https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/h3?startScript=dev&file=vite.config.mjs,server.ts) | `npx giget gh:nitrojs/vite-examples/examples/h3` |
+| `hono` | [examples/hono](./examples/hono/) | [stackblitz](https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/hono?startScript=dev&file=vite.config.mjs,server.ts) | `npx giget gh:nitrojs/vite-examples/examples/hono` |
+| `node-compat` | [examples/node-compat](./examples/node-compat/) | [stackblitz](https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/node-compat?startScript=dev&file=vite.config.mjs,server.ts) | `npx giget gh:nitrojs/vite-examples/examples/node-compat` |
+| `react-ssr` | [examples/react-ssr](./examples/react-ssr/) | [stackblitz](https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/react-ssr?startScript=dev&file=vite.config.mjs,server.ts) | `npx giget gh:nitrojs/vite-examples/examples/react-ssr` |
+| `vue-ssr` | [examples/vue-ssr](./examples/vue-ssr/) | [stackblitz](https://stackblitz.com/fork/github/nitrojs/nitro-vite-examples/tree/main/examples/vue-ssr?startScript=dev&file=vite.config.mjs,server.ts) | `npx giget gh:nitrojs/vite-examples/examples/vue-ssr` |
 
 <!-- /automd -->
 
