@@ -6,5 +6,9 @@
   "resolutions": {
     "nitro": "npm:nitro-nightly@3.0.0-20250711-090755.54759a69",
     "vite": "^7.0.4"
+  },
+  "devDependencies": {
+    "automd": "^0.4.0",
+    "mdbox": "^0.1.1"
   }
 }
