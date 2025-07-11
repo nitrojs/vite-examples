@@ -7,7 +7,6 @@ export default {
       async generate(ctx) {
         let examples = [];
         for await (const dir of glob("examples/*")) {
-          console.log(dir);
           const name = dir.split("/").pop();
           examples.push([
             `\`${name}\``,
@@ -16,7 +15,7 @@ export default {
         }
         return {
           contents: md.table({
-            columns: ["Name", "Source"],
+            columns: ["Example", "Source"],
             rows: examples,
           }),
         };
