@@ -12,7 +12,7 @@ export default defineConfig({
   ],
   environments: {
     client: {
-      build: { rollupOptions: { input: "./services/vue/client.ts" } },
+      build: { rollupOptions: { input: "./src/client.ts" } },
     },
   },
 });
