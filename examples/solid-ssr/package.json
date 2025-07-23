@@ -1,0 +1,15 @@
+{
+  "name": "nitro-vite-solid-ssr",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "nitro": "npm:nitro-nightly",
+    "solid-js": "^1.9.7",
+    "vite": "^7",
+    "vite-plugin-solid": "^2.11.7"
+  }
+}
