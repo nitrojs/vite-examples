@@ -1,22 +1,14 @@
 /// <reference types="vite/client" />
-import { renderToPipeableStream, renderToString } from "react-dom/server";
+import { renderToReadableStream } from "react-dom/server.browser";
 import App from "./App.jsx";
-import { PassThrough } from 'node:stream'
 
 export default {
   async fetch(req: Request): Promise<Response> {
 
-    const response = new Response();
-    const reactAppPassthrough = new PassThrough()
 
-    const { pipe } = renderToPipeableStream(<App />,
-      {
-        onShellReady() {
-          pipe(reactAppPassthrough);
-        }
-      }
+    const stream = await renderToReadableStream(<App />,
     );
-    return new Response(reactAppPassthrough as any, {
+    return new Response(stream as any, {
       headers: {
         "Content-Type": "text/html",
       },
