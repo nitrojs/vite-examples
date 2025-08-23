@@ -9,7 +9,7 @@
     "lint:fix": "automd && prettier -w ."
   },
   "resolutions": {
-    "nitro": "npm:nitro-nightly@3.0.0-20250717-115429.740761af",
+    "nitro": "npm:nitro-nightly@3.0.0-20250821-225918-fa3fb207",
     "vite": "^7.0.4"
   },
   "devDependencies": {
