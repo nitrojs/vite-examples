@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", "public/script*.js"],
+  "include": ["**/*.ts", "**/*.tsx", "public/script*.js", "vite.config.mjs"],
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
