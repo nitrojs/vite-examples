@@ -92,7 +92,7 @@ importers:
         specifier: ^3.5.17
         version: 3.5.20(typescript@5.9.2)
 
-  examples/tanstack-react-start:
+  examples/tanstack-start-react:
     devDependencies:
       '@tanstack/react-router':
         specifier: ^1.132.0-alpha.4
