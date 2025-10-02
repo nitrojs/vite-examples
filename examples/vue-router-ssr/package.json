@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "NITRO_HOST=127.0.0.1 false"
+    "preview": "NITRO_HOST=127.0.0.1 node .output/server/index.mjs"
   },
   "devDependencies": {
     "@hiogawa/vite-plugin-fullstack": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@a580426",
     "@tsconfig/strictest": "^2.0.6",
     "@unhead/vue": "^2.0.17",
     "@vitejs/plugin-vue": "^6.0.1",
-    "nitro": "npm:nitro-nightly@3.0.0-20251002-102506-5324ee74",
+    "nitro": "npm:nitro-nightly",
     "vite": "^7",
     "vite-plugin-devtools-json": "^1.0.0",
     "vue": "^3.5.22",
