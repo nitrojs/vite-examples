@@ -8,7 +8,7 @@
     "preview": "NITRO_HOST=127.0.0.1 false"
   },
   "devDependencies": {
-    "@hiogawa/vite-plugin-fullstack": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@2fc4555",
+    "@hiogawa/vite-plugin-fullstack": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@a580426",
     "@tsconfig/strictest": "^2.0.6",
     "@unhead/vue": "^2.0.17",
     "@vitejs/plugin-vue": "^6.0.1",
