@@ -18,14 +18,6 @@ async function main() {
 
   await router.isReady();
   app.mount("#root");
-
-  if (import.meta.hot) {
-    // TODO
-    import.meta.hot.on("fullstack:update", (e) => {
-      console.log("[fullstack:update]", e);
-      window.location.reload();
-    });
-  }
 }
 
 main();
