@@ -12,7 +12,7 @@ function increment() {
   <main>
     <div class="hero">
       <h1>Vue Router Custom Framework</h1>
-      <p class="subtitle">A simple demo app with Vite</p>
+      <p class="subtitle">Nitro + Server Assets API demo</p>
     </div>
     
     <div class="card counter-card">
