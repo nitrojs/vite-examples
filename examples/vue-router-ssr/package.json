@@ -13,7 +13,6 @@
     "@unhead/vue": "^2.0.17",
     "@vitejs/plugin-vue": "^6.0.1",
     "nitro": "npm:nitro-nightly@3.0.0-20251002-102506-5324ee74",
-    "srvx": "^0.8.7",
     "vite": "^7",
     "vite-plugin-devtools-json": "^1.0.0",
     "vue": "^3.5.22",
