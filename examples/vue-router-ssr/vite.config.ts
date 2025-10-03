@@ -1,4 +1,4 @@
-import { assetsPlugin } from "@hiogawa/vite-plugin-fullstack";
+import fullstack from "@hiogawa/vite-plugin-fullstack";
 import vue from "@vitejs/plugin-vue";
 import { defineConfig } from "vite";
 import devtoolsJson from "vite-plugin-devtools-json";
@@ -9,24 +9,11 @@ export default defineConfig((_env) => ({
   plugins: [
     vue(),
     devtoolsJson(),
-    assetsPlugin(),
+    fullstack({ serverHandler: false }),
     nitro(),
   ],
-  environments: {
-    client: {
-      build: {
-        rollupOptions: {
-          input: "./src/framework/entry.client.tsx",
-        }
-      }
-    },
-    ssr: {
-      build: {
-        rollupOptions: {
-          input: "./src/framework/entry.server.tsx",
-        }
-      }
-    },
+  optimizeDeps: {
+    entries: ["./src/framework/entry.client.tsx"],
   },
   builder: {
     async buildApp(builder) {
