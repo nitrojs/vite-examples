@@ -1,16 +1,19 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
   "include": ["src", "*.ts", "src/**/*.vue"],
   "compilerOptions": {
     "jsx": "preserve",
-    "noImplicitReturns": false,
-    "exactOptionalPropertyTypes": false,
+    "erasableSyntaxOnly": true,
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "target": "ESNext",
-    "lib": ["ESNext", "DOM", "DOM.Iterable", "DOM.AsyncIterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "types": ["vite/client", "@hiogawa/vite-plugin-fullstack/types"]
   }
 }

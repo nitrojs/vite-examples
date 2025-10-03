@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "@hiogawa/vite-plugin-fullstack": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@d92f7d5",
-    "@tsconfig/strictest": "^2.0.6",
     "@unhead/vue": "^2.0.17",
     "@vitejs/plugin-vue": "^6.0.1",
     "nitro": "npm:nitro-nightly",
