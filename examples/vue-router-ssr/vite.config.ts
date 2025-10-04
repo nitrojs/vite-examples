@@ -1,13 +1,13 @@
 import fullstack from "@hiogawa/vite-plugin-fullstack";
 import vue from "@vitejs/plugin-vue";
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import devtoolsJson from "vite-plugin-devtools-json";
 import { nitro } from "nitro/vite";
 
 export default defineConfig((_env) => ({
   clearScreen: false,
   plugins: [
-    vue(),
+    patchVueExclude(vue(), /\?assets/),
     devtoolsJson(),
     fullstack({ serverHandler: false }),
     nitro(),
@@ -22,3 +22,13 @@ export default defineConfig((_env) => ({
     },
   },
 }));
+
+// workaround https://github.com/vitejs/vite-plugin-vue/issues/677
+function patchVueExclude(plugin: Plugin, exclude: RegExp) {
+  const original = (plugin.transform as any).handler;
+  (plugin.transform as any).handler = function (this: any, ...args: any[]) {
+    if (exclude.test(args[1])) return;
+    return original.call(this, ...args);
+  };
+  return plugin;
+}
