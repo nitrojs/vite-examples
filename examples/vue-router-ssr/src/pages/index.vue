@@ -12,14 +12,12 @@ function increment() {
   <main>
     <div class="hero">
       <h1>Vue Router Custom Framework</h1>
-      <p class="subtitle">Nitro + Server Assets API demo</p>
+      <p class="subtitle">A simple demo app with Vite</p>
     </div>
-    
+
     <div class="card counter-card">
       <p>Count: {{ count }}</p>
-      <button @click="increment">
-        Increment
-      </button>
+      <button @click="increment">Increment</button>
     </div>
   </main>
 </template>
@@ -31,7 +29,7 @@ function increment() {
 }
 
 .hero h1 {
-  color: #646cff;
+  color: rgb(100, 108, 255);
 }
 
 .counter-card {

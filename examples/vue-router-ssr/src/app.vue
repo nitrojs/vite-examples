@@ -7,7 +7,7 @@ import "./styles.css";
   <nav>
     <ul>
       <li>
-        <RouterLink to="/" active-class="active">Home</RouterLink>
+        <RouterLink to="/" exact-active-class="active">Home</RouterLink>
       </li>
       <li>
         <RouterLink to="/about" active-class="active">About</RouterLink>
@@ -20,7 +20,7 @@ import "./styles.css";
 <style scoped>
 nav {
   background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
 
@@ -37,7 +37,6 @@ nav ul {
 nav a {
   color: #666;
   text-decoration: none;
-  font-weight: 500;
 }
 
 nav a:hover {
@@ -48,4 +47,3 @@ nav a.active {
   color: #646cff;
 }
 </style>
-
