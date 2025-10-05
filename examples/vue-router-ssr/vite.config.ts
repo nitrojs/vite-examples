@@ -15,6 +15,15 @@ export default defineConfig((_env) => ({
   optimizeDeps: {
     entries: ["./src/framework/entry.client.tsx"],
   },
+  environments: {
+    ssr: {
+      build: {
+        rollupOptions: {
+          input: "./src/framework/entry.server.ts",
+        }
+      }
+    },
+  },
   builder: {
     async buildApp(builder) {
       await builder.build(builder.environments["ssr"]!);
