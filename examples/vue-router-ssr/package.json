@@ -8,7 +8,7 @@
     "preview": "NITRO_HOST=127.0.0.1 node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@hiogawa/vite-plugin-fullstack": "https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@ecab7c8",
+    "@hiogawa/vite-plugin-fullstack": "0.0.0-alpha.3",
     "@vitejs/plugin-vue": "^6.0.1",
     "nitro": "npm:nitro-nightly",
     "unhead": "^2.0.17",
