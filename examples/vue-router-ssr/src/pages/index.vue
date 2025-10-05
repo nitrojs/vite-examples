@@ -14,12 +14,10 @@ function increment() {
       <h1>Vue Router Custom Framework</h1>
       <p class="subtitle">A simple demo app with Vite</p>
     </div>
-    
+
     <div class="card counter-card">
       <p>Count: {{ count }}</p>
-      <button @click="increment">
-        Increment
-      </button>
+      <button @click="increment">Increment</button>
     </div>
   </main>
 </template>

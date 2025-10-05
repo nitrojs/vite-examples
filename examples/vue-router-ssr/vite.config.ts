@@ -20,8 +20,8 @@ export default defineConfig((_env) => ({
       build: {
         rollupOptions: {
           input: "./src/framework/entry.server.ts",
-        }
-      }
+        },
+      },
     },
   },
   builder: {

@@ -20,7 +20,7 @@ import "./styles.css";
 <style scoped>
 nav {
   background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
 
