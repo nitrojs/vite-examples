@@ -9,25 +9,27 @@ export default defineConfig((_env) => ({
   plugins: [
     patchVueExclude(vue(), /\?assets/),
     devtoolsJson(),
-    fullstack({ serverHandler: false }),
     nitro(),
+    // NOTE: fullstack needs to come after nitro since
+    // it uses `buildApp` to output assets manifest file.
+    fullstack({ serverHandler: false, serverEnvironments: ["nitro"] }),
   ],
-  optimizeDeps: {
-    entries: ["./src/framework/entry.client.tsx"],
-  },
   environments: {
-    ssr: {
+    client: {
       build: {
         rollupOptions: {
-          input: "./src/framework/entry.server.ts",
+          // NOTE:
+          // fullstack plugin's client entry discovery is not supported
+          // since Nitro build order is `client` environment -> `nitro` environment.
+          input: "./src/framework/entry.client.ts",
         },
       },
     },
-  },
-  builder: {
-    async buildApp(builder) {
-      await builder.build(builder.environments["ssr"]!);
-      await builder.build(builder.environments["client"]!);
+    nitro: {
+      build: {
+        // TODO: Nitro doesn't set this up?
+        outDir: ".output/server",
+      },
     },
   },
 }));
