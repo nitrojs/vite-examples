@@ -7,6 +7,6 @@
   },
   "devDependencies": {
     "nitro": "npm:nitro-nightly",
-    "vite": "^7"
+    "vite": "^7.1.1"
   }
 }

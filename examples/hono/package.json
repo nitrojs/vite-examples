@@ -8,6 +8,6 @@
   "devDependencies": {
     "hono": "^4.8.4",
     "nitro": "npm:nitro-nightly",
-    "vite": "^7"
+    "vite": "^7.1.1"
   }
 }

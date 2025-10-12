@@ -8,7 +8,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",
     "nitro": "npm:nitro-nightly",
-    "vite": "^7",
+    "vite": "^7.1.1",
     "vue": "^3.5.17"
   }
 }
