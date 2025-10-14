@@ -1,0 +1,23 @@
+{
+  "name": "nitro-vite-qwik",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.types": "tsc --incremental --noEmit",
+    "dev": "vite --open --mode ssr",
+    "preview": "qwik build preview && cp -r ./dist/* ./.output/public/ && vite preview --open",
+    "qwik": "qwik"
+  },
+  "devDependencies": {
+    "@qwik.dev/core": "^2.0.0-beta.11",
+    "@qwik.dev/router": "^2.0.0-beta.11",
+    "nitro": "npm:nitro-nightly",
+    "node-fetch-native": "^1.6.7",
+    "typescript": "5.9.3",
+    "vite": "7.1.10",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

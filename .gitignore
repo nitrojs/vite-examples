@@ -26,3 +26,7 @@ package-lock.json
 *.iml
 *.lcov
 *.log
+
+# qwik
+/examples/qwik/tmp
+/examples/qwik/server
