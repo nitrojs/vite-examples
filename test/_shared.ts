@@ -32,7 +32,7 @@ export function setupTest(name: string) {
 
       beforeAll(async () => {
         server = await createServer({ root: rootDir });
-        await server.listen(0);
+        await server.listen("0" as unknown as number);
         const addr = server.httpServer?.address() as {
           port: number;
           address: string;
