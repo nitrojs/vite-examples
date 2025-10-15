@@ -5,16 +5,21 @@
   "packageManager": "pnpm@10.13.1",
   "scripts": {
     "automd": "automd",
+    "test": "vitest run",
+    "dev": "vitest",
     "lint": "prettier -c .",
     "lint:fix": "automd && prettier -w ."
   },
   "resolutions": {
-    "nitro": "npm:nitro-nightly@3.0.1-20251013-195204-b3acfd09",
+    "nitro": "npm:nitro-nightly@3.0.1-20251015-103211-44b2f091",
     "vite": "^7.1.0"
   },
   "devDependencies": {
+    "@types/node": "^24.7.2",
     "automd": "^0.4.2",
     "mdbox": "^0.1.1",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "vite": "^7.1.10",
+    "vitest": "^3.2.4"
   }
 }
