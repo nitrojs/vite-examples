@@ -1,4 +1,4 @@
-import fullstack from "@hiogawa/vite-plugin-fullstack";
+import { assetsPlugin } from "@hiogawa/vite-plugin-fullstack";
 import vue from "@vitejs/plugin-vue";
 import { defineConfig, type Plugin } from "vite";
 import devtoolsJson from "vite-plugin-devtools-json";
@@ -9,37 +9,44 @@ export default defineConfig((_env) => ({
   plugins: [
     patchVueExclude(vue(), /\?assets/),
     devtoolsJson(),
+    patchAssets(assetsPlugin()),
     nitro(),
-    // NOTE: fullstack needs to come after nitro since
-    // it uses `buildApp` to output assets manifest file.
-    fullstack({ serverHandler: false, serverEnvironments: ["nitro"] }),
   ],
   environments: {
     client: {
       build: {
-        rollupOptions: {
-          // NOTE:
-          // fullstack plugin's client entry discovery is not supported
-          // since Nitro build order is `client` environment -> `nitro` environment.
-          input: "./src/framework/entry.client.ts",
-        },
+        rollupOptions: { input: "./src/entry-client.ts" },
       },
     },
-    nitro: {
+    ssr: {
       build: {
-        // TODO: Nitro doesn't set this up?
-        outDir: ".output/server",
+        rollupOptions: { input: "./src/entry-server.ts" },
+        outDir: ".nitro/vite/services/ssr",
       },
     },
   },
 }));
 
-// workaround https://github.com/vitejs/vite-plugin-vue/issues/677
+// Workaround https://github.com/vitejs/vite-plugin-vue/issues/677
 function patchVueExclude(plugin: Plugin, exclude: RegExp) {
   const original = (plugin.transform as any).handler;
   (plugin.transform as any).handler = function (this: any, ...args: any[]) {
     if (exclude.test(args[1])) return;
     return original.call(this, ...args);
   };
+  return plugin;
+}
+
+// Ensure order: Client => SSR => [manifest] => Nitro
+function patchAssets(plugin: any[]): any {
+  const assetsPlugin = plugin.find((p) => p.name === "fullstack:assets") as any;
+
+  const buildAppHook = assetsPlugin.buildApp.handler;
+  assetsPlugin.buildApp = async (builder: any) => {
+    await builder.build(builder.environments.client);
+    await builder.build(builder.environments.ssr);
+    await buildAppHook(builder);
+  };
+
   return plugin;
 }

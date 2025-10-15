@@ -1,6 +1,5 @@
 import type { RouteRecordRaw } from "vue-router";
 
-// custom framework may employ fs router convention to reduce boilerplace.
 export const routes: RouteRecordRaw[] = [
   {
     path: "/",

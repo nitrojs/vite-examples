@@ -3,12 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
     "build": "vite build",
-    "preview": "NITRO_HOST=127.0.0.1 node .output/server/index.mjs"
+    "dev": "vite dev",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@hiogawa/vite-plugin-fullstack": "0.0.2",
+    "@hiogawa/vite-plugin-fullstack": "0.0.3",
     "@vitejs/plugin-vue": "^6.0.1",
     "nitro": "npm:nitro-nightly",
     "unhead": "^2.0.17",

@@ -1,29 +1,24 @@
+import { createSSRApp } from "vue";
+import { renderToString } from "vue/server-renderer";
+import { RouterView, createMemoryHistory, createRouter } from "vue-router";
+
 import { mergeAssets } from "@hiogawa/vite-plugin-fullstack/runtime";
 import { createHead, transformHtmlTemplate } from "unhead/server";
-import { createSSRApp } from "vue";
-import { RouterView, createMemoryHistory, createRouter } from "vue-router";
-import { renderToString } from "vue/server-renderer";
-import { routes } from "../routes";
-import clientEntry from "./entry.client.ts?assets=client";
+
+import { routes } from "./routes";
+import clientEntry from "./entry-client.ts?assets=client";
 
 async function handler(request: Request): Promise<Response> {
-  // setup app
   const app = createSSRApp(RouterView);
-
-  // setup vue-router
-  // https://github.com/nuxt/nuxt/blob/766806c8d90015873f86c3f103b09803bd214258/packages/nuxt/src/pages/runtime/plugins/router.ts
-  const router = createRouter({
-    history: createMemoryHistory(),
-    routes,
-  });
+  const router = createRouter({ history: createMemoryHistory(), routes });
   app.use(router);
 
   const url = new URL(request.url);
   const href = url.href.slice(url.origin.length);
+
   await router.push(href);
   await router.isReady();
 
-  // collect assets from current route
   const assets = mergeAssets(
     clientEntry,
     ...(await Promise.all(
@@ -33,7 +28,9 @@ async function handler(request: Request): Promise<Response> {
         .map((fn) => fn!().then((m) => m.default)),
     )),
   );
+
   const head = createHead();
+
   head.push({
     link: [
       ...assets.css.map((attrs) => ({ rel: "stylesheet", ...attrs })),
@@ -42,12 +39,17 @@ async function handler(request: Request): Promise<Response> {
     script: [{ type: "module", src: clientEntry.entry }],
   });
 
-  // SSR
-  const ssrStream = await renderToString(app);
+  const renderedApp = await renderToString(app);
 
-  // inject to HTML shell with head tags
-  let htmlStream = `\
-<!DOCTYPE html>
+  const html = await transformHtmlTemplate(head, htmlTemplate(renderedApp));
+
+  return new Response(html, {
+    headers: { "Content-Type": "text/html;charset=utf-8" },
+  });
+}
+
+function htmlTemplate(body: string): string {
+  return /* html */ `\<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -55,23 +57,16 @@ async function handler(request: Request): Promise<Response> {
   <title>Vue Router Custom Framework</title>
 </head>
 <body>
-  <div id="root">${ssrStream}</div>
+  <div id="root">${body}</div>
 </body>
-</html>
-`;
-  htmlStream = await transformHtmlTemplate(head, htmlStream);
-
-  return new Response(htmlStream, {
-    headers: {
-      "Content-Type": "text/html;charset=utf-8",
-    },
-  });
+</html>`;
 }
 
 export default {
   fetch: handler,
 };
 
-if (import.meta.hot) {
-  import.meta.hot.accept();
-}
+// TODO
+// if (import.meta.hot) {
+//   import.meta.hot.accept();
+// }
