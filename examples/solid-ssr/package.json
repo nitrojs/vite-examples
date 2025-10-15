@@ -6,9 +6,9 @@
     "dev": "vite dev"
   },
   "devDependencies": {
-    "nitro": "npm:nitro-nightly",
+    "nitro": "npm:nitro-nightly@3.0.1-20251013-195204-b3acfd09",
     "solid-js": "^1.9.9",
-    "vite": "^7",
-    "vite-plugin-solid": "^2.11.8"
+    "vite": "^7.1.10",
+    "vite-plugin-solid": "^2.11.9"
   }
 }
