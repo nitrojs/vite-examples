@@ -7,12 +7,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@tanstack/router-plugin": "^1.132.51",
+    "@tanstack/router-plugin": "^1.132.56",
     "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.1",
+    "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.0.4",
-    "nitro": "npm:nitro-nightly@latest",
-    "vite": "latest"
+    "nitro": "npm:nitro-nightly@3.0.1-20251013-195204-b3acfd09",
+    "vite": "^7.1.10"
   },
   "dependencies": {
     "@tanstack/react-router": "1.132.0-alpha.4",
