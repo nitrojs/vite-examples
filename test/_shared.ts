@@ -5,7 +5,12 @@ import { createServer, createBuilder, type ViteDevServer } from "vite";
 
 const examplesDir = fileURLToPath(new URL("../examples", import.meta.url));
 
-export function setupTest(name: string) {
+interface TestConfig {
+  skipDev?: boolean;
+  skipProd?: boolean;
+}
+
+export function setupTest(name: string, testConfig: TestConfig = {}) {
   const rootDir = join(examplesDir, name);
 
   describe(name, () => {
@@ -26,7 +31,7 @@ export function setupTest(name: string) {
       });
     }
 
-    describe("dev", () => {
+    describe.skipIf(testConfig.skipDev)("dev", () => {
       let server: ViteDevServer;
       const context: TestContext = {} as any;
 
@@ -49,7 +54,7 @@ export function setupTest(name: string) {
       fixtureTests(context);
     });
 
-    describe("prod", () => {
+    describe.skipIf(testConfig.skipProd)("prod", () => {
       const context: TestContext = {} as any;
 
       beforeAll(async () => {

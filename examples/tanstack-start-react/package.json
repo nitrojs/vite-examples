@@ -1,21 +1,20 @@
 {
   "name": "tanstack-start-react-example",
   "private": true,
-  "sideEffects": false,
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "vite dev"
+    "dev": "vite dev",
+    "serve": "vite preview"
   },
   "devDependencies": {
     "@tanstack/react-router": "^1.132.47",
-    "@tanstack/react-router-devtools": "^1.133.1",
     "@tanstack/react-start": "^1.133.2",
-    "@types/node": "^24.7.2",
+    "@types/node": "^22.18.10",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react": "^4.7.0",
-    "nitro": "npm:nitro-nightly@3.0.1-20251013-195204-b3acfd09",
+    "@vitejs/plugin-react": "^5.0.4",
+    "nitro": "npm:nitro-nightly@3.0.1-20251015-103211-44b2f091",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "typescript": "^5.9.3",
