@@ -1,3 +1,3 @@
 import { setupTest } from "./_shared";
 
-setupTest("standard");
+await setupTest("standard");

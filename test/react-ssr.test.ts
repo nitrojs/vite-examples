@@ -1,3 +1,3 @@
 import { setupTest } from "./_shared";
 
-setupTest("react-ssr");
+await setupTest("react-ssr");

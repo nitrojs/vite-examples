@@ -1,5 +1,5 @@
 import { setupTest } from "./_shared";
 
-setupTest("tanstack-start-react", {
+await setupTest("tanstack-start-react", {
   skipProd: true,
 });

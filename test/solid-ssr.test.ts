@@ -1,3 +1,3 @@
 import { setupTest } from "./_shared";
 
-setupTest("solid-ssr");
+await await setupTest("solid-ssr");

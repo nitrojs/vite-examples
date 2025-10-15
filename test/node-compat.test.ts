@@ -1,3 +1,3 @@
 import { setupTest } from "./_shared";
 
-setupTest("node-compat");
+await setupTest("node-compat");

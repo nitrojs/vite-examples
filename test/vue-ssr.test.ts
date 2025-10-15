@@ -1,3 +1,3 @@
 import { setupTest } from "./_shared";
 
-setupTest("vue-ssr");
+await setupTest("vue-ssr");
