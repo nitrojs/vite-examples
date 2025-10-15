@@ -56,7 +56,10 @@ export function setupTest(name: string) {
         process.chdir(rootDir);
         process.env.NITRO_PRESET = "standard";
 
-        const builder = await createBuilder({ base: rootDir });
+        const builder = await createBuilder({
+          base: rootDir,
+          logLevel: "warn",
+        });
         await builder.buildApp();
 
         const entry = join(rootDir, ".output/server/index.mjs");
