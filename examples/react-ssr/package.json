@@ -7,13 +7,13 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.1",
+    "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.0.4",
-    "nitro": "npm:nitro-nightly",
+    "nitro": "npm:nitro-nightly@3.0.1-20251013-195204-b3acfd09",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-refresh": "^0.17.0",
-    "vite": "^7.1.1",
-    "vue": "^3.5.17"
+    "react-refresh": "^0.18.0",
+    "vite": "^7.1.10",
+    "vue": "^3.5.22"
   }
 }
