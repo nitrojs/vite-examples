@@ -63,8 +63,3 @@ function htmlTemplate(body: string): string {
 export default {
   fetch: handler,
 };
-
-// TODO
-// if (import.meta.hot) {
-//   import.meta.hot.accept();
-// }
