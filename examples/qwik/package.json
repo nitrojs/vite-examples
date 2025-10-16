@@ -5,7 +5,7 @@
   "scripts": {
     "build": "qwik build",
     "build.client": "vite build",
-    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.preview": "vite build --ssr",
     "build.types": "tsc --incremental --noEmit",
     "dev": "vite --open --mode ssr",
     "preview": "qwik build preview && cp -r ./dist/* ./.output/public/ && vite preview --open",

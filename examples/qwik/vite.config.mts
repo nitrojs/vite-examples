@@ -6,7 +6,12 @@ import { nitro } from "nitro/vite";
 
 export default defineConfig(() => {
   return {
-    plugins: [qwikRouter(), qwikVite(), tsconfigPaths({ root: "." }), nitro()],
+    plugins: [
+      qwikRouter({ devSsrServer: false }),
+      qwikVite({ ssr: { input: "src/entry.server" } }),
+      tsconfigPaths({ root: "." }),
+      nitro(),
+    ],
     build: { rollupOptions: { external: [/^node/] } },
   };
 });

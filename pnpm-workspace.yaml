@@ -1,2 +1,5 @@
 packages:
-  - "./examples/**"
+  - ./examples/**
+
+overrides:
+  vite: ^7.1.0
