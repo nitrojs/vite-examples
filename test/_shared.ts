@@ -36,6 +36,7 @@ export function setupTest(name: string, testConfig: TestConfig = {}) {
       const context: TestContext = {} as any;
 
       beforeAll(async () => {
+        process.chdir(rootDir);
         server = await createServer({ root: rootDir });
         await server.listen("0" as unknown as number);
         const addr = server.httpServer?.address() as {
@@ -62,7 +63,6 @@ export function setupTest(name: string, testConfig: TestConfig = {}) {
         process.env.NITRO_PRESET = "standard";
 
         const builder = await createBuilder({
-          base: rootDir,
           logLevel: "warn",
         });
         await builder.buildApp();
