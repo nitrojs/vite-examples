@@ -11,7 +11,7 @@
     "lint:fix": "automd && prettier -w ."
   },
   "resolutions": {
-    "nitro": "https://pkg.pr.new/nitrojs/nitro@3662",
+    "nitro": "https://pkg.pr.new/nitrojs/nitro@e6a242a",
     "vite": "^7.1.0"
   },
   "devDependencies": {
