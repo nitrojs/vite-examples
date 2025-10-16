@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  nitro: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
+  nitro: https://pkg.pr.new/nitrojs/nitro@3662
   vite: ^7.1.0
 
 importers:
@@ -37,8 +37,8 @@ importers:
         specifier: npm:h3-nightly@2.0.0-beta.5
         version: h3-nightly@2.0.0-beta.5(crossws@0.4.1(srvx@0.8.16))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.0
         version: 7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)
@@ -49,8 +49,8 @@ importers:
         specifier: ^4.9.12
         version: 4.9.12
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.0
         version: 7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)
@@ -62,8 +62,8 @@ importers:
         version: 2.1.0
     devDependencies:
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.0
         version: 7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)
@@ -80,8 +80,8 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -101,8 +101,8 @@ importers:
   examples/solid-ssr:
     devDependencies:
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       solid-js:
         specifier: ^1.9.9
         version: 1.9.9
@@ -116,8 +116,8 @@ importers:
   examples/standard:
     devDependencies:
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.0
         version: 7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)
@@ -150,8 +150,8 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.0
         version: 7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)
@@ -177,8 +177,8 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6))
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -197,15 +197,12 @@ importers:
 
   examples/vue-router-ssr:
     devDependencies:
-      '@hiogawa/vite-plugin-fullstack':
-        specifier: 0.0.3
-        version: 0.0.3(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
         version: 6.0.1(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))(vue@3.5.22(typescript@5.9.3))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       unhead:
         specifier: ^2.0.17
         version: 2.0.19
@@ -228,8 +225,8 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))(vue@3.5.22(typescript@5.9.3))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251015-114932-a0f52cc9
-        version: nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: https://pkg.pr.new/nitrojs/nitro@3662
+        version: https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.0
         version: 7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)
@@ -548,8 +545,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hiogawa/vite-plugin-fullstack@0.0.3':
-    resolution: {integrity: sha512-vFx72us18dB1w/C/okzYLulPWc+YYp3FLK8LNxC88fDq+vcXuwAutpItq3oqDjZ9kCdDaiA0HiZ1R3xcL8vovA==}
+  '@hiogawa/vite-plugin-fullstack@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@767cbbe':
+    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@767cbbe}
+    version: 0.0.3
     peerDependencies:
       vite: ^7.1.0
 
@@ -1486,8 +1484,9 @@ packages:
   nf3@0.1.1:
     resolution: {integrity: sha512-iJfiw84oKzsOOM+zqr0fycjgLx2wLw1RrGLHd9qxUPwMtut6GjBalDS9TRPZJXMAZjUv9ghLgtDrhzqcFJ8eTQ==}
 
-  nitro-nightly@3.0.1-20251015-114932-a0f52cc9:
-    resolution: {integrity: sha512-Q4r6W7QK6ozLJ3SDY/hgDw5YxrMDfR1mLK1ZiwqglBChvVQMOClVGCzBpLDrVSOd57W+ErYYvXB1m1I/oNmy5w==}
+  nitro@https://pkg.pr.new/nitrojs/nitro@3662:
+    resolution: {tarball: https://pkg.pr.new/nitrojs/nitro@3662}
+    version: 3.0.1-alpha.0
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2292,7 +2291,14 @@ snapshots:
   '@esbuild/win32-x64@0.25.11':
     optional: true
 
-  '@hiogawa/vite-plugin-fullstack@0.0.3(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))':
+  '@hiogawa/vite-plugin-fullstack@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@767cbbe(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6))':
+    dependencies:
+      magic-string: 0.30.19
+      srvx: 0.8.16
+      strip-literal: 3.1.0
+      vite: 7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6)
+
+  '@hiogawa/vite-plugin-fullstack@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@767cbbe(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))':
     dependencies:
       magic-string: 0.30.19
       srvx: 0.8.16
@@ -3363,8 +3369,9 @@ snapshots:
 
   nf3@0.1.1: {}
 
-  nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6)):
+  nitro@https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6)):
     dependencies:
+      '@hiogawa/vite-plugin-fullstack': https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@767cbbe(vite@7.1.10(@types/node@22.18.10)(jiti@2.6.1)(tsx@4.20.6))
       consola: 3.4.2
       cookie-es: 2.0.0
       crossws: 0.4.1(srvx@0.8.16)
@@ -3413,8 +3420,9 @@ snapshots:
       - sqlite3
       - uploadthing
 
-  nitro-nightly@3.0.1-20251015-114932-a0f52cc9(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)):
+  nitro@https://pkg.pr.new/nitrojs/nitro@3662(chokidar@4.0.3)(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6)):
     dependencies:
+      '@hiogawa/vite-plugin-fullstack': https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-fullstack@767cbbe(vite@7.1.10(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.20.6))
       consola: 3.4.2
       cookie-es: 2.0.0
       crossws: 0.4.1(srvx@0.8.16)
