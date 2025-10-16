@@ -63,7 +63,6 @@ export function setupTest(name: string, testConfig: TestConfig = {}) {
         process.env.NITRO_PRESET = "standard";
 
         const builder = await createBuilder({
-          base: rootDir,
           logLevel: "warn",
         });
         await builder.buildApp();
