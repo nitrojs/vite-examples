@@ -36,6 +36,7 @@ export function setupTest(name: string, testConfig: TestConfig = {}) {
       const context: TestContext = {} as any;
 
       beforeAll(async () => {
+        process.chdir(rootDir);
         server = await createServer({ root: rootDir });
         await server.listen("0" as unknown as number);
         const addr = server.httpServer?.address() as {
