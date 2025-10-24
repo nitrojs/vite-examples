@@ -5,7 +5,8 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  nitro: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
+  nitro: npm:nitro-nightly
+  vite: ^7.1.12
 
 importers:
 
@@ -33,8 +34,8 @@ importers:
   examples/h3:
     devDependencies:
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.12
         version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
@@ -45,8 +46,8 @@ importers:
         specifier: ^4.10.2
         version: 4.10.2
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.12
         version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
@@ -58,8 +59,8 @@ importers:
         version: 2.1.0
     devDependencies:
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.12
         version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
@@ -76,8 +77,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -97,8 +98,8 @@ importers:
   examples/solid-ssr:
     devDependencies:
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       solid-js:
         specifier: ^1.9.9
         version: 1.9.9
@@ -112,8 +113,8 @@ importers:
   examples/standard:
     devDependencies:
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.12
         version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
@@ -146,8 +147,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.12
         version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
@@ -173,8 +174,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -191,14 +192,38 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(typescript@5.9.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
 
+  examples/vue-router-ssr:
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^6.0.1
+        version: 6.0.1(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))(vue@3.5.22(typescript@5.9.3))
+      nitro:
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+      unhead:
+        specifier: ^2.0.17
+        version: 2.0.19
+      vite:
+        specifier: ^7.1.12
+        version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
+      vite-plugin-devtools-json:
+        specifier: ^1.0.0
+        version: 1.0.0(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+      vue:
+        specifier: ^3.5.22
+        version: 3.5.22(typescript@5.9.3)
+      vue-router:
+        specifier: ^4.5.1
+        version: 4.6.3(vue@3.5.22(typescript@5.9.3))
+
   examples/vue-ssr:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
         version: 6.0.1(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))(vue@3.5.22(typescript@5.9.3))
       nitro:
-        specifier: npm:nitro-nightly@3.0.1-20251023-220447-2d199369
-        version: nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
+        specifier: npm:nitro-nightly
+        version: nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6))
       vite:
         specifier: ^7.1.12
         version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
@@ -757,7 +782,7 @@ packages:
     resolution: {integrity: sha512-U6nBlxxc624Q7Yta3UUe805WJfi0R029N/vUOVNxggZ432nt+0Hx7gLQO2P9zIUt+N6VYPuyKLKq047bxCJWOw==}
     engines: {node: '>=12'}
     peerDependencies:
-      vite: '>=6.0.0 || >=7.0.0'
+      vite: ^7.1.12
 
   '@tanstack/history@1.133.19':
     resolution: {integrity: sha512-Y866qBVVprdQkmO0/W1AFBI8tiQy398vFeIwP+VrRWCOzs3VecxSVzAvaOM4iHfkJz81fFAZMhLLjDVoPikD+w==}
@@ -798,7 +823,7 @@ packages:
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
       react-dom: '>=18.0.0 || >=19.0.0'
-      vite: '>=7.0.0'
+      vite: ^7.1.12
 
   '@tanstack/react-store@0.7.7':
     resolution: {integrity: sha512-qqT0ufegFRDGSof9D/VqaZgjNgp4tRPHZIJq2+QIHkMUtHjaJ0lYrrXjeIUJvjnTbgPfSD1XgOMEt0lmANn6Zg==}
@@ -832,7 +857,7 @@ packages:
     peerDependencies:
       '@rsbuild/core': '>=1.0.2'
       '@tanstack/react-router': ^1.133.27
-      vite: '>=5.0.0 || >=6.0.0 || >=7.0.0'
+      vite: ^7.1.12
       vite-plugin-solid: ^2.11.10
       webpack: '>=5.92.0'
     peerDependenciesMeta:
@@ -863,7 +888,7 @@ packages:
     resolution: {integrity: sha512-kMrtbv0kcTuFGwbZM0eAi4L5ZPLc3p6KDCsRQH4T4t/Yp1+e1B4LF8VgRBEAq82/3VTEGVu0XpvWwxbZ6kAfLQ==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
-      vite: '>=7.0.0'
+      vite: ^7.1.12
 
   '@tanstack/start-server-core@1.133.27':
     resolution: {integrity: sha512-VhpplARtPhVIGolxe6R84sHjtZeVzjWsxiBx8HwcVhflrFyaEAD0P7WW034a9LfFcOEhuPVv8Bm/9ZHQ6VoqsA==}
@@ -916,13 +941,13 @@ packages:
     resolution: {integrity: sha512-4LuWrg7EKWgQaMJfnN+wcmbAW+VSsCmqGohftWjuct47bv8uE4n/nPpq4XjJPsxgq00GGG5J8dvBczp8uxScew==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+      vite: ^7.1.12
 
   '@vitejs/plugin-vue@6.0.1':
     resolution: {integrity: sha512-+MaE752hU0wfPFJEUAIxqw18+20euHHdxVtMvbFcOEpjEyfqXH/5DCoTHiVJ0J29EhTJdoTkjEv5YBKU9dnoTw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      vite: ^5.0.0 || ^6.0.0 || ^7.0.0
+      vite: ^7.1.12
       vue: ^3.2.25
 
   '@vitest/expect@4.0.2':
@@ -932,7 +957,7 @@ packages:
     resolution: {integrity: sha512-oiny+oBSGU9vHMA1DPdO+t1GVidCRuA4lKSG6rbo5SrCiTCGl7bTCyTaUkwxDpUkiSxEVneeXW4LJ4fg3H56dw==}
     peerDependencies:
       msw: ^2.4.9
-      vite: ^6.0.0 || ^7.0.0-0
+      vite: ^7.1.12
     peerDependenciesMeta:
       msw:
         optional: true
@@ -965,6 +990,9 @@ packages:
 
   '@vue/compiler-ssr@3.5.22':
     resolution: {integrity: sha512-GdgyLvg4R+7T8Nk2Mlighx7XGxq/fJf9jaVofc3IL0EPesTE86cP/8DD1lT3h1JeZr2ySBvyqKQJgbS54IX1Ww==}
+
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   '@vue/reactivity@3.5.22':
     resolution: {integrity: sha512-f2Wux4v/Z2pqc9+4SmgZC1p73Z53fyD90NFWXiX9AKVnVBEvLFOWCEgJD3GdGnlxPZt01PSlfmLqbLYzY/Fw4A==}
@@ -1304,6 +1332,9 @@ packages:
     resolution: {integrity: sha512-p6fyzl+mQo6uhESLxbF5WlBOAJMDh36PljwlKtP5V1v09NxlqGru3ShK+4wKhSuhuYf8qxMmrivHOa/M7q0sMg==}
     engines: {node: '>=16.9.0'}
 
+  hookable@5.5.3:
+    resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
+
   html-entities@2.3.3:
     resolution: {integrity: sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==}
 
@@ -1399,13 +1430,13 @@ packages:
   nf3@0.1.2:
     resolution: {integrity: sha512-7QJv2caGRLqFX7v5lSliqckqDecxEEqqRyhbcTBxYHP1uzRe2SEPv+e1sIn70Wi/D8QoL7fselpdzDiO0UqgtA==}
 
-  nitro-nightly@3.0.1-20251023-220447-2d199369:
-    resolution: {integrity: sha512-liCaP5cHQ40dv43vDBEIm8dDeHFuSsl+21SK9WxfIrkCfzzwbLX6Z2QRyU1jX1GKfxlSJbMebP2Cq1p2d2zwOg==}
+  nitro-nightly@3.1.0-20251024-111905-4718bf73:
+    resolution: {integrity: sha512-/bbwkBJ9O6x04YudxTFLuisfhfYACOkHTC1ObP0oVl1GPv35y6ah2DEJgLy3ZSHWm2+4nEY6QePGbqJnS8+6QQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
       rolldown: '*'
-      vite: ^7
+      vite: ^7.1.12
       xml2js: ^0.6.2
     peerDependenciesMeta:
       rolldown:
@@ -1654,6 +1685,9 @@ packages:
   unenv@2.0.0-rc.22:
     resolution: {integrity: sha512-o1sLtqbAT1WEoZxinE+tgIHIgpzt9p1WdTAwxF7wHHSseSJ5WQbZgZgFegMDz5Fwb5rMKd67p4pv5OnJWeo/bA==}
 
+  unhead@2.0.19:
+    resolution: {integrity: sha512-gEEjkV11Aj+rBnY6wnRfsFtF2RxKOLaPN4i+Gx3UhBxnszvV6ApSNZbGk7WKyy/lErQ6ekPN63qdFL7sa1leow==}
+
   unplugin@2.3.10:
     resolution: {integrity: sha512-6NCPkv1ClwH+/BGE9QeoTIl09nuiAt0gS28nn1PvYXsGKRwM2TCbFA2QiilmehPDTXIe684k4rZI1yl3A1PCUw==}
     engines: {node: '>=18.12.0'}
@@ -1747,15 +1781,24 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
+  uuid@11.1.0:
+    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+    hasBin: true
+
   validate-html-nesting@1.2.3:
     resolution: {integrity: sha512-kdkWdCl6eCeLlRShJKbjVOU2kFKxMF8Ghu50n+crEoyx+VKm3FxAxF9z4DCy6+bbTOqNW0+jcIYRnjoIRzigRw==}
+
+  vite-plugin-devtools-json@1.0.0:
+    resolution: {integrity: sha512-MobvwqX76Vqt/O4AbnNMNWoXWGrKUqZbphCUle/J2KXH82yKQiunOeKnz/nqEPosPsoWWPP9FtNuPBSYpiiwkw==}
+    peerDependencies:
+      vite: ^7.1.12
 
   vite-plugin-solid@2.11.10:
     resolution: {integrity: sha512-Yr1dQybmtDtDAHkii6hXuc1oVH9CPcS/Zb2jN/P36qqcrkNnVPsMTzQ06jyzFPFjj3U1IYKMVt/9ZqcwGCEbjw==}
     peerDependencies:
       '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
       solid-js: ^1.7.2
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+      vite: ^7.1.12
     peerDependenciesMeta:
       '@testing-library/jest-dom':
         optional: true
@@ -1763,7 +1806,7 @@ packages:
   vite-tsconfig-paths@5.1.4:
     resolution: {integrity: sha512-cYj0LRuLV2c2sMqhqhGpaO3LretdtMn/BVX4cPLanIZuwwrkVl+lK84E/miEXkCHWXuq65rhNN4rXsBcOB3S4w==}
     peerDependencies:
-      vite: '*'
+      vite: ^7.1.12
     peerDependenciesMeta:
       vite:
         optional: true
@@ -1811,7 +1854,7 @@ packages:
   vitefu@1.1.1:
     resolution: {integrity: sha512-B/Fegf3i8zh0yFbpzZ21amWzHmuNlLlmJT6n7bu5e+pCHUKQIfXSYokrqOBGEMMe9UG2sostKQF9mml/vYaWJQ==}
     peerDependencies:
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0-beta.0
+      vite: ^7.1.12
     peerDependenciesMeta:
       vite:
         optional: true
@@ -1849,6 +1892,11 @@ packages:
         optional: true
       jsdom:
         optional: true
+
+  vue-router@4.6.3:
+    resolution: {integrity: sha512-ARBedLm9YlbvQomnmq91Os7ck6efydTSpRP3nuOKCvgJOHNrhRoJDSKtee8kcL1Vf7nz6U+PMBL+hTvR3bTVQg==}
+    peerDependencies:
+      vue: ^3.5.0
 
   vue@3.5.22:
     resolution: {integrity: sha512-toaZjQ3a/G/mYaLSbV+QsQhIdMo9x5rrqIpYRObsJ6T/J+RyCSFwN2LHNVH9v8uIcljDNa3QzPVdv3Y6b9hAJQ==}
@@ -2729,6 +2777,8 @@ snapshots:
       '@vue/compiler-dom': 3.5.22
       '@vue/shared': 3.5.22
 
+  '@vue/devtools-api@6.6.4': {}
+
   '@vue/reactivity@3.5.22':
     dependencies:
       '@vue/shared': 3.5.22
@@ -3084,6 +3134,8 @@ snapshots:
 
   hono@4.10.2: {}
 
+  hookable@5.5.3: {}
+
   html-entities@2.3.3: {}
 
   htmlparser2@10.0.0:
@@ -3166,7 +3218,7 @@ snapshots:
 
   nf3@0.1.2: {}
 
-  nitro-nightly@3.0.1-20251023-220447-2d199369(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)):
+  nitro-nightly@3.1.0-20251024-111905-4718bf73(chokidar@4.0.3)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)):
     dependencies:
       consola: 3.4.2
       cookie-es: 2.0.0
@@ -3449,6 +3501,10 @@ snapshots:
       pathe: 2.0.3
       ufo: 1.6.1
 
+  unhead@2.0.19:
+    dependencies:
+      hookable: 5.5.3
+
   unplugin@2.3.10:
     dependencies:
       '@jridgewell/remapping': 2.3.5
@@ -3480,7 +3536,14 @@ snapshots:
     dependencies:
       react: 19.2.0
 
+  uuid@11.1.0: {}
+
   validate-html-nesting@1.2.3: {}
+
+  vite-plugin-devtools-json@1.0.0(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)):
+    dependencies:
+      uuid: 11.1.0
+      vite: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)
 
   vite-plugin-solid@2.11.10(solid-js@1.9.9)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(tsx@4.20.6)):
     dependencies:
@@ -3561,6 +3624,11 @@ snapshots:
       - terser
       - tsx
       - yaml
+
+  vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.22(typescript@5.9.3)
 
   vue@3.5.22(typescript@5.9.3):
     dependencies:
