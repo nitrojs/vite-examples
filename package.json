@@ -11,15 +11,15 @@
     "lint:fix": "automd && prettier -w ."
   },
   "resolutions": {
-    "nitro": "https://pkg.pr.new/nitrojs/nitro@e6a242a",
-    "vite": "^7.1.0"
+    "nitro": "npm:nitro-nightly",
+    "vite": "^7.1.12"
   },
   "devDependencies": {
-    "@types/node": "^24.7.2",
+    "@types/node": "^24.9.1",
     "automd": "^0.4.2",
     "mdbox": "^0.1.1",
     "prettier": "^3.6.2",
-    "vite": "^7.1.10",
-    "vitest": "^3.2.4"
+    "vite": "^7.1.12",
+    "vitest": "^4.0.2"
   }
 }
