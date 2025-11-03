@@ -6,15 +6,16 @@ import { nitro } from "nitro/vite";
 export default defineConfig((_env) => ({
   clearScreen: false,
   plugins: [patchVueExclude(vue(), /\?assets/), devtoolsJson(), nitro()],
+  nitro: { serverDir: "server" },
   environments: {
     client: {
       build: {
-        rollupOptions: { input: "./src/entry-client.ts" },
+        rollupOptions: { input: "./app/entry-client.ts" },
       },
     },
     ssr: {
       build: {
-        rollupOptions: { input: "./src/entry-server.ts" },
+        rollupOptions: { input: "./app/entry-server.ts" },
       },
     },
   },
