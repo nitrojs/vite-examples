@@ -4,6 +4,7 @@ import { nitro } from "nitro/vite";
 
 export default defineConfig({
   plugins: [solid({ ssr: true }), nitro()],
+  nitro: { serverDir: "." },
   esbuild: {
     jsx: "preserve",
     jsxImportSource: "solid-js",
