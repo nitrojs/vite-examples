@@ -6,7 +6,7 @@
     "dev": "vite dev"
   },
   "devDependencies": {
-    "nitro": "npm:nitro-nightly",
+    "nitro": "npm:nitro-nightly@3.0.1-20251103-181403-aefcdb31",
     "vite": "^7.1.12"
   }
 }

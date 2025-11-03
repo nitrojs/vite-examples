@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
-    "nitro": "npm:nitro-nightly",
+    "nitro": "npm:nitro-nightly@3.0.1-20251103-181403-aefcdb31",
     "unhead": "^2.0.17",
     "vite": "^7",
     "vite-plugin-devtools-json": "^1.0.0",

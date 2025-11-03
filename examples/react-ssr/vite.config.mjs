@@ -4,6 +4,7 @@ import { nitro } from "nitro/vite";
 
 export default defineConfig({
   plugins: [react(), nitro()],
+  nitro: { serverDir: "." },
   environments: {
     client: {
       build: { rollupOptions: { input: "./src/client.tsx" } },

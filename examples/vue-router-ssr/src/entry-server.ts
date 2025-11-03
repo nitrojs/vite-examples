@@ -5,6 +5,8 @@ import { RouterView, createMemoryHistory, createRouter } from "vue-router";
 import { createHead, transformHtmlTemplate } from "unhead/server";
 
 import { routes } from "./routes";
+
+// @ts-ignore
 import clientEntry from "./entry-client.ts?assets=client";
 
 async function handler(request: Request): Promise<Response> {
@@ -31,8 +33,8 @@ async function handler(request: Request): Promise<Response> {
 
   head.push({
     link: [
-      ...assets.css.map((attrs) => ({ rel: "stylesheet", ...attrs })),
-      ...assets.js.map((attrs) => ({ rel: "modulepreload", ...attrs })),
+      ...assets.css.map((attrs: any) => ({ rel: "stylesheet", ...attrs })),
+      ...assets.js.map((attrs: any) => ({ rel: "modulepreload", ...attrs })),
     ],
     script: [{ type: "module", src: clientEntry.entry }],
   });

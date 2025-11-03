@@ -11,4 +11,5 @@ export default defineConfig({
     viteReact(),
     nitro(),
   ],
+  nitro: { serverDir: "." },
 });
