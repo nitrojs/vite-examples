@@ -196,6 +196,30 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(typescript@5.9.3)(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6))
 
+  examples/vue-router-ssr:
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^6.0.1
+        version: 6.0.1(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6))(vue@3.5.22(typescript@5.9.3))
+      nitro:
+        specifier: npm:nitro-nightly@3.0.1-20251103-181403-aefcdb31
+        version: nitro-nightly@3.0.1-20251103-181403-aefcdb31(chokidar@4.0.3)(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6))
+      unhead:
+        specifier: ^2.0.17
+        version: 2.0.19
+      vite:
+        specifier: ^7
+        version: 7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6)
+      vite-plugin-devtools-json:
+        specifier: ^1.0.0
+        version: 1.0.0(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6))
+      vue:
+        specifier: ^3.5.22
+        version: 3.5.22(typescript@5.9.3)
+      vue-router:
+        specifier: ^4.5.1
+        version: 4.6.3(vue@3.5.22(typescript@5.9.3))
+
   examples/vue-ssr:
     devDependencies:
       '@vitejs/plugin-vue':
@@ -1004,6 +1028,9 @@ packages:
   '@vue/compiler-ssr@3.5.22':
     resolution: {integrity: sha512-GdgyLvg4R+7T8Nk2Mlighx7XGxq/fJf9jaVofc3IL0EPesTE86cP/8DD1lT3h1JeZr2ySBvyqKQJgbS54IX1Ww==}
 
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+
   '@vue/reactivity@3.5.22':
     resolution: {integrity: sha512-f2Wux4v/Z2pqc9+4SmgZC1p73Z53fyD90NFWXiX9AKVnVBEvLFOWCEgJD3GdGnlxPZt01PSlfmLqbLYzY/Fw4A==}
 
@@ -1447,6 +1474,9 @@ packages:
   hono@4.10.4:
     resolution: {integrity: sha512-YG/fo7zlU3KwrBL5vDpWKisLYiM+nVstBQqfr7gCPbSYURnNEP9BDxEMz8KfsDR9JX0lJWDRNc6nXX31v7ZEyg==}
     engines: {node: '>=16.9.0'}
+
+  hookable@5.5.3:
+    resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
 
   html-entities@2.3.3:
     resolution: {integrity: sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==}
@@ -1923,6 +1953,9 @@ packages:
   unenv@2.0.0-rc.24:
     resolution: {integrity: sha512-i7qRCmY42zmCwnYlh9H2SvLEypEFGye5iRmEMKjcGi7zk9UquigRjFtTLz0TYqr0ZGLZhaMHl/foy1bZR+Cwlw==}
 
+  unhead@2.0.19:
+    resolution: {integrity: sha512-gEEjkV11Aj+rBnY6wnRfsFtF2RxKOLaPN4i+Gx3UhBxnszvV6ApSNZbGk7WKyy/lErQ6ekPN63qdFL7sa1leow==}
+
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
@@ -2020,9 +2053,18 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
+  uuid@11.1.0:
+    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+    hasBin: true
+
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+
+  vite-plugin-devtools-json@1.0.0:
+    resolution: {integrity: sha512-MobvwqX76Vqt/O4AbnNMNWoXWGrKUqZbphCUle/J2KXH82yKQiunOeKnz/nqEPosPsoWWPP9FtNuPBSYpiiwkw==}
+    peerDependencies:
+      vite: ^5.0.0 || ^6.0.0 || ^7.0.0
 
   vite-plugin-solid@2.11.10:
     resolution: {integrity: sha512-Yr1dQybmtDtDAHkii6hXuc1oVH9CPcS/Zb2jN/P36qqcrkNnVPsMTzQ06jyzFPFjj3U1IYKMVt/9ZqcwGCEbjw==}
@@ -2123,6 +2165,11 @@ packages:
         optional: true
       jsdom:
         optional: true
+
+  vue-router@4.6.3:
+    resolution: {integrity: sha512-ARBedLm9YlbvQomnmq91Os7ck6efydTSpRP3nuOKCvgJOHNrhRoJDSKtee8kcL1Vf7nz6U+PMBL+hTvR3bTVQg==}
+    peerDependencies:
+      vue: ^3.5.0
 
   vue@3.5.22:
     resolution: {integrity: sha512-toaZjQ3a/G/mYaLSbV+QsQhIdMo9x5rrqIpYRObsJ6T/J+RyCSFwN2LHNVH9v8uIcljDNa3QzPVdv3Y6b9hAJQ==}
@@ -3051,6 +3098,8 @@ snapshots:
       '@vue/compiler-dom': 3.5.22
       '@vue/shared': 3.5.22
 
+  '@vue/devtools-api@6.6.4': {}
+
   '@vue/reactivity@3.5.22':
     dependencies:
       '@vue/shared': 3.5.22
@@ -3542,6 +3591,8 @@ snapshots:
       function-bind: 1.1.2
 
   hono@4.10.4: {}
+
+  hookable@5.5.3: {}
 
   html-entities@2.3.3: {}
 
@@ -4041,6 +4092,10 @@ snapshots:
     dependencies:
       pathe: 2.0.3
 
+  unhead@2.0.19:
+    dependencies:
+      hookable: 5.5.3
+
   unpipe@1.0.0: {}
 
   unplugin@2.3.10:
@@ -4074,7 +4129,14 @@ snapshots:
     dependencies:
       react: 19.2.0
 
+  uuid@11.1.0: {}
+
   vary@1.1.2: {}
+
+  vite-plugin-devtools-json@1.0.0(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6)):
+    dependencies:
+      uuid: 11.1.0
+      vite: 7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6)
 
   vite-plugin-solid@2.11.10(solid-js@1.9.10)(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6)):
     dependencies:
@@ -4155,6 +4217,11 @@ snapshots:
       - terser
       - tsx
       - yaml
+
+  vue-router@4.6.3(vue@3.5.22(typescript@5.9.3)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.22(typescript@5.9.3)
 
   vue@3.5.22(typescript@5.9.3):
     dependencies:
