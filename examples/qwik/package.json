@@ -7,7 +7,7 @@
     "build.client": "vite build",
     "build.preview": "vite build --ssr",
     "build.types": "tsc --incremental --noEmit",
-    "dev": "vite --open --mode ssr",
+    "dev": "vite --open",
     "preview": "qwik build preview && cp -r ./dist/* ./.output/public/ && vite preview --open",
     "qwik": "qwik"
   },
@@ -15,7 +15,6 @@
     "@qwik.dev/core": "^2.0.0-beta.11",
     "@qwik.dev/router": "^2.0.0-beta.11",
     "nitro": "npm:nitro-nightly@3.0.1-20251103-181403-aefcdb31",
-    "node-fetch-native": "^1.6.7",
     "typescript": "5.9.3",
     "vite": "7.1.10",
     "vite-tsconfig-paths": "^5.1.4"

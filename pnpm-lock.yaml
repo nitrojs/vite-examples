@@ -83,9 +83,6 @@ importers:
       nitro:
         specifier: npm:nitro-nightly@3.0.1-20251103-181403-aefcdb31
         version: nitro-nightly@3.0.1-20251103-181403-aefcdb31(chokidar@4.0.3)(vite@7.1.12(@types/node@24.10.0)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1))
-      node-fetch-native:
-        specifier: ^1.6.7
-        version: 1.6.7
       typescript:
         specifier: 5.9.3
         version: 5.9.3
