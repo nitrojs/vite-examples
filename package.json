@@ -10,15 +10,13 @@
     "lint": "prettier -c .",
     "lint:fix": "automd && prettier -w ."
   },
-  "resolutions": {
-    "nitro": "npm:nitro-nightly@3.0.1-20251023-220447-2d199369"
-  },
   "devDependencies": {
-    "@types/node": "^24.9.1",
+    "@types/node": "^24.10.0",
     "automd": "^0.4.2",
+    "h3": "2.0.1-rc.5",
     "mdbox": "^0.1.1",
     "prettier": "^3.6.2",
     "vite": "^7.1.12",
-    "vitest": "^4.0.2"
+    "vitest": "^4.0.6"
   }
 }

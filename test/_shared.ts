@@ -1,5 +1,6 @@
 import { join } from "path";
 import { fileURLToPath } from "url";
+import { toRequest } from "h3";
 import { describe, test, expect, beforeAll, afterAll } from "vitest";
 import { createServer, createBuilder, type ViteDevServer } from "vite";
 
@@ -71,7 +72,7 @@ export function setupTest(name: string, testConfig: TestConfig = {}) {
         const entry = join(rootDir, ".output/server/index.mjs");
         const entryMod = await import(entry).then((mod) => mod.default);
         expect(entryMod?.fetch).toBeInstanceOf(Function);
-        context.fetch = entryMod.fetch;
+        context.fetch = (input, init) => entryMod.fetch(toRequest(input, init));
       });
 
       fixtureTests(context);

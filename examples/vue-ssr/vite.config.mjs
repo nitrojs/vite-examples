@@ -7,4 +7,5 @@ export default defineConfig({
   environments: {
     client: { build: { rollupOptions: { input: "./src/client.ts" } } },
   },
+  nitro: { serverDir: "." },
 });
