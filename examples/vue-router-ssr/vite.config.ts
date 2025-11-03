@@ -6,7 +6,10 @@ import { nitro } from "nitro/vite";
 export default defineConfig((_env) => ({
   clearScreen: false,
   plugins: [patchVueExclude(vue(), /\?assets/), devtoolsJson(), nitro()],
-  nitro: { serverDir: "server" },
+  nitro: {
+    serverDir: "server",
+    noExternals: true,
+  },
   environments: {
     client: {
       build: {
